@@ -10,6 +10,7 @@ import {deepOrange500} from 'material-ui/lib/styles/colors';
 import FlatButton from 'material-ui/lib/flat-button';
 import getMuiTheme from 'material-ui/lib/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/lib/MuiThemeProvider';
+import DatePicker from 'material-ui/lib/date-picker/date-picker';
 
 const styles = {
   container: {
@@ -17,7 +18,6 @@ const styles = {
     paddingTop: 200,
   },
 };
-
 const muiTheme = getMuiTheme({
   palette: {
     accent1Color: deepOrange500,
@@ -74,6 +74,7 @@ class Main extends React.Component {
             primary={true}
             onTouchTap={this.handleTouchTap}
           />
+           <DatePicker hintText="Landscape Inline Dialog" container="inline" mode="landscape" />
         </div>
       </MuiThemeProvider>
     );

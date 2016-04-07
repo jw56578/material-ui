@@ -57,7 +57,10 @@ class Main extends React.Component {
     );
 
     return (
+        <div>
+         <DatePicker hintText="Landscape Inline Dialog" container="inline" mode="landscape" />
       <MuiThemeProvider muiTheme={muiTheme}>
+      
         <div style={styles.container}>
           <Dialog
             open={this.state.open}
@@ -74,9 +77,10 @@ class Main extends React.Component {
             primary={true}
             onTouchTap={this.handleTouchTap}
           />
-           <DatePicker hintText="Landscape Inline Dialog" container="inline" mode="landscape" />
+          
         </div>
       </MuiThemeProvider>
+      </div>
     );
   }
 }
